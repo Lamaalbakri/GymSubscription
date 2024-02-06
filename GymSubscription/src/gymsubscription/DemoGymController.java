@@ -19,7 +19,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /*
-  Programmer: Lama Albakri 
   Gym Subscription System
 */
 public class DemoGymController implements Initializable {

@@ -11,7 +11,6 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /*
-  Programmer: Lama Albakri 
   Gym Subscription System
 */
 public class dataFromFile {

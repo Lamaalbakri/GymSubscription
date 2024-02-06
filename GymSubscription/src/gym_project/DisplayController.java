@@ -13,7 +13,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.RowConstraints;
 
 /*
-  Programmer: Lama Albakri
   Gym Subscription System
 */
 public class DisplayController implements Initializable {

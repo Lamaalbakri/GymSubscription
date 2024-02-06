@@ -1,7 +1,6 @@
 package gymsubscription;
 
-/*
-  Programmer: Lama Albakri 
+/* 
   Gym Subscription System
 */
 public class info {

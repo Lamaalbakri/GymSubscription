@@ -6,8 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/*
-  Programmer: Lama Albakri 
+/* 
   Gym Subscription System
 */
 public class demogym extends Application{

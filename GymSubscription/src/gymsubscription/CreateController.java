@@ -21,8 +21,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
-/*
-  Programmer: Lama Albakri 
+/* 
   Gym Subscription System
 */
 public class CreateController implements Initializable {
