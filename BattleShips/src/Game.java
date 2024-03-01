@@ -2,7 +2,8 @@ import java.util.List;
 
 
 
-public class Game {
+public class Game
+{
     private final Player player1;
     private final Player player2;
     private boolean gameIsRunning;
@@ -84,4 +85,3 @@ public class Game {
         consoleInput.pressAnyKeyToContinue();
     }
 }
-

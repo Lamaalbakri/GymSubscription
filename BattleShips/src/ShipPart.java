@@ -1,6 +1,7 @@
 
-public class ShipPart {
 
+public class ShipPart
+{
     private ShipPartStatus status;
     private char sign;
 

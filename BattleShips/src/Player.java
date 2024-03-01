@@ -3,7 +3,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 
-public class Player {
+public class Player
+{
     private final List<Ship> ships;
     private final Board playerBoard;
     private final Board shootingBoard;

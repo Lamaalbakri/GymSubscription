@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Board {
+public class Board
+{
     private final Spot[][] spotArray;
 
     public Board() {
@@ -23,28 +24,28 @@ public class Board {
     public List<Spot> getSpotsForShip(int shipSize, Orientation orientation, Coordinates coordinates) {
         List<Spot> validSpots = new ArrayList<>();
         switch (orientation) {
-            case EAST -> {
+            case EAST: {
                 for (int i = 0; i < shipSize; i++) {
                     if (this.getSpotArray()[coordinates.getX()][coordinates.getY() + i].isEmpty()) {
                         validSpots.add(this.getSpotArray()[coordinates.getX()][coordinates.getY() + i]);
                     }
                 }
             }
-            case WEST -> {
+            case WEST: {
                 for (int i = 0; i < shipSize; i++) {
                     if (this.getSpotArray()[coordinates.getX()][coordinates.getY() - i].isEmpty()) {
                         validSpots.add(this.getSpotArray()[coordinates.getX()][coordinates.getY() - i]);
                     }
                 }
             }
-            case NORTH -> {
+            case NORTH: {
                 for (int i = 0; i < shipSize; i++) {
                     if (this.getSpotArray()[coordinates.getX() - i][coordinates.getY()].isEmpty()) {
                         validSpots.add(this.getSpotArray()[coordinates.getX() - i][coordinates.getY()]);
                     }
                 }
             }
-            case SOUTH -> {
+            case SOUTH: {
                 for (int i = 0; i < shipSize; i++) {
                     if (this.getSpotArray()[coordinates.getX() + i][coordinates.getY()].isEmpty()) {
                         validSpots.add(this.getSpotArray()[coordinates.getX() + i][coordinates.getY()]);

@@ -1,6 +1,7 @@
 
 
-public class Coordinates {
+public class Coordinates
+{
     private final int xCoordinate;
     private final int yCoordinate;
 

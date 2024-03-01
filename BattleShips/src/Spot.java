@@ -1,5 +1,7 @@
 
-public class Spot {
+
+public class Spot
+{
     private boolean empty;
     private char sign;
     private ShipPart shipPart;

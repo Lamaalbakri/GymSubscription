@@ -1,8 +1,8 @@
 import java.util.List;
 
 
-public class ConsoleView {
-
+public class ConsoleView 
+{
     public void printBoard(Board board) {
         printBoardSigns();
         printLine();
@@ -65,5 +65,4 @@ public class ConsoleView {
         System.out.print("-+");
         System.out.println();
     }
-
 }

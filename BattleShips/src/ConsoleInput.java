@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-public class ConsoleInput {
+
+public class ConsoleInput
+{
     private final Scanner scanner;
     private final ConsoleView consoleView;
 
@@ -21,10 +23,10 @@ public class ConsoleInput {
         int colFirstDigit = Character.getNumericValue(chosenCoordinates.charAt(1));
 
         switch (chosenCoordinates.length()) {
-            case 2 -> {
+            case 2: {
                 return new Coordinates(row, colFirstDigit - 1);
             }
-            case 3 -> {
+            case 3: {
                 int colSecondDigit = Character.getNumericValue(chosenCoordinates.charAt(2));
                 String addedDigits = (colFirstDigit) + "" + (colSecondDigit);
                 int col = Integer.parseInt(addedDigits);
@@ -38,16 +40,16 @@ public class ConsoleInput {
         Scanner scanner = new Scanner(System.in);
         int chosenOrientation = scanner.nextInt();
         switch (chosenOrientation) {
-            case 1 -> {
+            case 1: {
                 return Orientation.NORTH;
             }
-            case 2 -> {
+            case 2: {
                 return Orientation.EAST;
             }
-            case 3 -> {
+            case 3: {
                 return Orientation.SOUTH;
             }
-            default -> {
+            default: {
                 return Orientation.WEST;
             }
         }
@@ -67,7 +69,7 @@ public class ConsoleInput {
 
     private boolean validUserInput(String chosenCoordinates) {
         switch (chosenCoordinates.length()) {
-            case 2 -> {
+            case 2: {
                 try {
                     char isCharValid = chosenCoordinates.charAt(0);
                     char isFirstDigitValid = chosenCoordinates.charAt(1);
@@ -83,7 +85,7 @@ public class ConsoleInput {
                 }
 
             }
-            case 3 -> {
+            case 3: {
                 try {
                     char isCharValid = chosenCoordinates.charAt(0);
                     char isFirstDigitValid = chosenCoordinates.charAt(1);
@@ -103,7 +105,7 @@ public class ConsoleInput {
                 }
 
             }
-            default -> {
+            default: {
                 System.out.println("Something wrong, try again...");
                 return false;
             }

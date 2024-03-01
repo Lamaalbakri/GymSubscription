@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public abstract class Ship {
+public abstract class Ship
+{
     private final int size;
     private boolean sunk;
     private final List<ShipPart> shipParts;
@@ -39,4 +40,3 @@ public abstract class Ship {
         return sunk;
     }
 }
-
